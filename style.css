@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    background: linear-gradient(135deg, #eef4fb, #dce8f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 20px;
+   gap: 15px;
+}
+.card {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(30, 58, 138, 0.3);
+    border-radius: 14px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expense-form {
+   width: 350px;
+   flex-direction: column;
+   display: flex;
+   gap: 15px;
+   background: rgba(255, 255, 255, 0.78);
+   backdrop-filter: blur(10px);
+   border: 2px solid rgba(30, 58, 138, 0.3);
+   border-radius: 14px;
+   padding: 25px 30px;
+   box-shadow: 0 10px 25px rgba(30, 58, 138, 0.08);
+   text-align: center;
+}  
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+} 
+
+ .expense-form select,
+  .expense-form input[type="number"],
+  .expense-form input[type="text"] {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    padding: 10px 14px !important;
+    margin:0 0 12px 0 !important;
+    border: 1px solid #ccc;
+    border-radius: 8px !important;
+    color: #333 !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    min-height: 44px !important;
+    font-size: 16px !important;
+}
+ button:not(li button),
+ input[type="button"],
+ input[type="submit"] {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    width: 75px !important;
+    max-width: 100%;
+    padding: 10px 16px !important;
+    margin: 4px auto 18px auto !important;
+    background-color: #1e3a8a;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+   z-index: 1 !important;
+}
+button:not(li button):hover
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #218838 !important;
+}
+ul {
+    list-style-type: none;
+    width: 350px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+ li {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+
+}
+li button{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 4px 8px;
+}
+li button:hover {
+    background-color: #c82333;
+}
+ div.total-expense {
+    border-top: 2px solid #1e3a8a;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #1e3a8a;
+    padding: 10px;
+}

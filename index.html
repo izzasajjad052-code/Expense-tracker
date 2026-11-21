@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+    <h1>Expense Tracker</h1>
+    <form id="expense-form">
+        <select id="category-input">
+            <option value="">Select Category</option>
+            <option value="grocery">Grocery</option>
+            <option value="fee">Fee</option>
+            <option value="car">Car</option>
+            <option value="bills">Bills</option>
+            <option value="health">Health</option>
+            <option value="rent">Rent</option>
+            <option value="savings">Savings</option>
+        </select>
+        <input type="number" id="amount-input" placeholder="Amount"/>
+        <button type="submit">ADD</button>
+    </form>
+    <ul id="expense-list"></ul>
+    <div class="total-expense">
+        <h2>Total Expense: <span id="total-amount">0</span></h2>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
